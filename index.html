@@ -29,33 +29,34 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
                         <li class="nav-item">
-                            <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link js-scroll-trigger active text-primary" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle js-scroll-trigger" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#web">Web Design</a></li>
-                                <li><a class="dropdown-item" href="#web">Graphics Design</a></li>
+                                <li><a class="dropdown-item js-scroll-trigger" href="#web">Web Design</a></li>
+                                <li><a class="dropdown-item js-scroll-trigger" href="#web">Graphics Design</a></li>
 
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tech">Technology</a>
+                            <a class="nav-link js-scroll-trigger" href="#tech">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                         </li>
 
                         </li>
 
                     </ul>
+
 
                 </div>
             </div>
@@ -339,6 +340,11 @@
       }, false)
     })
 })()
+          </script>
+     <script type="text/JavaScript">
+            $('.js-scroll-trigger').click(function() {
+                $('navbar-collapse').collapse('hide');
+            })
           </script>
 </body>
 
